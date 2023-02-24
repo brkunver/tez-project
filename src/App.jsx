@@ -6,8 +6,7 @@ import About from "./About"
 
 function App() {
   //videoların youtube id'lerini tutan state listesi
-  let [vID, setVID] = useState(7)
-
+  let [vID, setVID] = useState(0)
 
   //sıradaki vidoyu oynatan fonksiyon
   let changeVideo = () => {
@@ -20,7 +19,6 @@ function App() {
     })
   }
 
-  
   return (
     <div className="App">
       <YoutubePlayer
